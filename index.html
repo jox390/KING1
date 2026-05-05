@@ -496,9 +496,45 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        /* Suspension Overlay Style */
+        .suspension-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            z-index: 999999;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            direction: rtl;
+        }
+        .suspension-overlay h1 {
+            color: #ff0000;
+            font-size: clamp(2rem, 10vw, 4rem);
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+        }
+        .suspension-overlay p {
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        body {
+            overflow: hidden; /* يمنع التمرير خلف الغطاء */
+        }
     </style>
 </head>
 <body>
+
+<div class="suspension-overlay">
+    <h1>تم وقف الموقع لعدم سداد المصاريف</h1>
+    <p>بواسطة مبرمج جوكس</p>
+</div>
 
 <header>
     <div class="header-container">

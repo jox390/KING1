@@ -1,8 +1,8 @@
-# Task Progress: Make Buy Buttons Open WhatsApp with Product Details (Completed ✅)
+# Task Progress: Add Site Suspension Overlay (Completed ✅)
 
 ## Steps:
-- [x] Understand current code (index.html read)
-- [x] Add data-product, data-price to each buy-now button (3 edits)
-- [x] Add JS event listener to construct WA message with product, price, size and open wa.me link
-- [x] Test by refreshing site (run `start index.html`)
-- [x] Mark task complete
+- [x] 1. Create TODO.md
+- [x] 2. Edit index.html - added full-screen suspension overlay before </body> with big red "تم وقف الموقع لعدم سداد المصاريف" + "بواسطة مبرمج جوكس"
+- [x] 3. Test preview with `start index.html`
+- [x] 4. Update TODO.md
+- [x] 5. Task complete
