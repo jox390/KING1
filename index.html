@@ -523,6 +523,31 @@
             color: #ffffff;
             font-size: 1.5rem;
             font-weight: bold;
+            margin-bottom: 30px; /* Add some space below the paragraph */
+        }
+        .suspension-overlay a.contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(45deg, #25d366, #128c7e);
+            color: white;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: bold;
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            animation: pulse-green 2s infinite;
+        }
+        .suspension-overlay a.contact-btn:hover {
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 0 15px 30px rgba(37, 211, 102, 0.5);
+        }
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
         }
         body {
             overflow: hidden; /* يمنع التمرير خلف الغطاء */
@@ -534,6 +559,7 @@
 <div class="suspension-overlay">
     <h1>تم وقف الموقع لعدم سداد المصاريف</h1>
     <p>بواسطة مبرمج جوكس</p>
+    <a href="https://wa.me/201061854695" target="_blank" class="contact-btn">💬 تواصل مع المبرمج الآن</a>
 </div>
 
 <header>
